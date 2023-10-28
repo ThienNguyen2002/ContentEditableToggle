@@ -1,0 +1,22 @@
+{
+  "name": "Edit Webpage Toggle",
+  "version": "1.0.0",
+  "description": "A simple toggle to edit a webpage",
+  "manifest_version": 3,
+  "author": "Thien Nguyen",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action":
+  {
+    "default_popup": "index.html",
+    "default_title": "Edit Webpage Toggle"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
